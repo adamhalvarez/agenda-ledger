@@ -1,0 +1,101 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #6b6b6b;
+  --border: #e2e2e2;
+  --accent: #0058aa;
+  --added-bg: #e6ffed;
+  --added-fg: #22863a;
+  --removed-bg: #ffeef0;
+  --removed-fg: #b31d28;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 1rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+h1 {
+  font-size: 1.25rem;
+  margin: 0 0 0.25rem;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+}
+
+.hash {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  word-break: break-all;
+}
+
+.scroll-box {
+  overflow-x: auto;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.5rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+pre {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  white-space: pre;
+  margin: 0;
+}
+
+.diff-line-add { background: var(--added-bg); color: var(--added-fg); }
+.diff-line-del { background: var(--removed-bg); color: var(--removed-fg); }
+
+.text-block {
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+  max-height: 24rem;
+  overflow-y: auto;
+}
+
+a.download {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.error {
+  color: var(--removed-fg);
+}
+
+.summary {
+  font-size: 0.95rem;
+}

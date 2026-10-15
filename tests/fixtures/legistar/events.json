@@ -1,0 +1,32 @@
+[
+  {
+    "EventId": 40001,
+    "EventBodyId": 100,
+    "EventBodyName": "City Council",
+    "EventDate": "2026-08-18T00:00:00",
+    "EventTime": "10:00 AM",
+    "EventAgendaFile": "https://example.legistar.com/View.ashx?M=A&ID=900001",
+    "EventMinutesFile": "https://example.legistar.com/View.ashx?M=M&ID=900002",
+    "EventInSiteURL": "https://example.legistar.com/MeetingDetail.aspx?ID=40001"
+  },
+  {
+    "EventId": 40002,
+    "EventBodyId": 101,
+    "EventBodyName": "Budget Committee",
+    "EventDate": "2026-08-20T00:00:00",
+    "EventTime": "2:00 PM",
+    "EventAgendaFile": "https://example.legistar.com/View.ashx?M=A&ID=900010",
+    "EventMinutesFile": null,
+    "EventInSiteURL": "https://example.legistar.com/MeetingDetail.aspx?ID=40002"
+  },
+  {
+    "EventId": 40003,
+    "EventBodyId": 100,
+    "EventBodyName": "City Council",
+    "EventDate": "2026-08-25T00:00:00",
+    "EventTime": "10:00 AM",
+    "EventAgendaFile": null,
+    "EventMinutesFile": null,
+    "EventInSiteURL": "https://example.legistar.com/MeetingDetail.aspx?ID=40003"
+  }
+]

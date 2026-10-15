@@ -1,0 +1,60 @@
+# Civic Record Ledger -- monitored governing bodies.
+#
+# Add a body by adding a list entry here. No code change is needed as long
+# as source_type is one of: legistar, primegov, granicus, pdf_directory.
+# See src/adapters/*.py for what source_config each type expects.
+
+bodies:
+  - name: Los Angeles City Council
+    jurisdiction: City of Los Angeles
+    source_type: primegov
+    active: true
+    source_config:
+      host: lacity.primegov.com
+      # committee_id: 1        # uncomment + set to narrow to one committee
+
+  - name: Los Angeles County Board of Supervisors
+    jurisdiction: County of Los Angeles
+    source_type: pdf_directory
+    active: true
+    source_config:
+      index_url: https://bos.lacounty.gov/board-meeting-agendas/
+      date_format: "%m%d%y"
+      doc_type: agenda
+
+  - name: Los Angeles Board of Police Commissioners
+    jurisdiction: City of Los Angeles
+    source_type: pdf_directory
+    active: true
+    source_config:
+      # LAPD posts one archive index per calendar year. Listing next year's
+      # page alongside the current one means this keeps working across the
+      # year boundary unattended: unpublished pages 404 harmlessly (handled
+      # per-URL in pdf_directory.py) until LAPD actually posts them. Add a
+      # new year to this list well before it's needed; nothing breaks if a
+      # listed page doesn't exist yet.
+      index_urls:
+        - https://www.lapdonline.org/police-commission-agenda-archives-2026/
+        - https://www.lapdonline.org/police-commission-agenda-archives-2027/
+      date_format: "%m%d%y"
+      doc_type: agenda
+
+  # Templates for the two adapter types the pilot doesn't need. Left
+  # inactive; URLs are illustrative, not live.
+  - name: Example Legistar City Council
+    jurisdiction: Example City
+    source_type: legistar
+    active: false
+    source_config:
+      client: example
+      days_back: 30
+      # event_body_id: 100
+
+  - name: Example Granicus Client
+    jurisdiction: Example County
+    source_type: granicus
+    active: false
+    source_config:
+      feed_url: https://example.granicus.com/ViewPublisherRSS.php?view_id=1
+      feed_type: rss
+      doc_type: agenda

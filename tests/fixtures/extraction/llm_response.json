@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "item_number": "1-P",
+      "title": "Allocate Prop A Excess Funds for Whittier Narrows Recreation Area Regional Splash Pad",
+      "action_type": "allocate",
+      "dollar_amount": 549532.83,
+      "addresses": [],
+      "entities": ["Department of Parks and Recreation", "Supervisor Solis"]
+    },
+    {
+      "item_number": "19",
+      "title": "Protecting Eaton and Palisades Fire Survivors from Fraud, Predatory Practices, and Contractor Scams",
+      "action_type": "amend",
+      "dollar_amount": 250000000,
+      "addresses": ["742 Evergreen Terrace"],
+      "entities": ["Supervisor Barger", "Supervisor Horvath", "Consumer Protection Bureau of Los Angeles"]
+    }
+  ]
+}

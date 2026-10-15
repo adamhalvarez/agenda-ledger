@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Example LA Outlet</title>
+  <item>
+    <title>Acme Construction wins new city contract</title>
+    <description>The Los Angeles City Council approved a deal with Acme Construction on Monday.</description>
+    <link>https://example-outlet.org/acme-contract</link>
+    <pubDate>Mon, 01 Sep 2026 12:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>Weather report for the week</title>
+    <description>Sunny skies expected through the weekend.</description>
+    <link>https://example-outlet.org/weather</link>
+    <pubDate>Tue, 02 Sep 2026 08:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>AcmeCorp announces unrelated merger</title>
+    <description>A different, unrelated company with a similar-looking name.</description>
+    <link>https://example-outlet.org/acmecorp-merger</link>
+    <pubDate>Wed, 03 Sep 2026 09:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>Old story mentioning Acme Construction</title>
+    <description>This ran well outside the search window.</description>
+    <link>https://example-outlet.org/old-story</link>
+    <pubDate>Mon, 01 Jan 2024 09:00:00 GMT</pubDate>
+  </item>
+</channel>
+</rss>
